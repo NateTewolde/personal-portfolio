@@ -1,6 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer {
+  padding: 64px;
+}
+
+.wrapper {
+  font-family: "Roboto", serif;
+}
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
 .headshot img {
   max-width: 300px;
 }
 
-.header-section {
+header {
+  background-color: #0791b2;
+  transform: skewY(-11deg) translateY(-40%);
+  box-shadow: 0px 2px 2px #a3a3a3;
+}
+
+.header-items {
+  transform: skewY(11deg) translateY(40%);
+  display: flex;
+  align-items: center;
+}
+
+.my-header-img img {
+  box-shadow: 0px 2px 4px #a3a3a3;
+}
+
+.about-me-section {
+  padding: 24px;
+  background-color: white;
+  box-shadow: 0px 2px 6px #a3a3a3;
+  display: grid;
+  grid-template-rows: repeat(1fr);
+}
+
+.about-me-description {
+  padding: 18px 0px 24px 0px;
+}
+
+.about-me-logos {
+  margin-left: auto;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
 }
