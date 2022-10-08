@@ -6,10 +6,10 @@
   padding: 0;
 }
 
-header,
+.header-items,
 main,
 footer {
-  padding: 32px 64px;
+  padding: 32px 128px;
 }
 
 .wrapper {
@@ -30,7 +30,6 @@ h2 {
 }
 
 header {
-  padding-top: 64px;
   background-color: #0791b2;
   transform: skewY(-11deg) translateY(-40%);
   box-shadow: 0px 2px 2px #a3a3a3;
@@ -49,6 +48,7 @@ header {
 .about-me-section {
   padding: 24px;
   background-color: white;
+  font-size: 1.1rem;
   box-shadow: 0px 2px 6px #a3a3a3;
   display: grid;
   grid-template-rows: repeat(1fr);
@@ -79,22 +79,35 @@ header {
 }
 
 footer {
-  color: white;
   margin: 0;
   background-color: #0791b2;
   box-sizing: border-box;
-  display: flex;
 }
 
 .contact-items {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: top;
   justify-content: space-between;
   width: 100%;
+  color: white;
+  font-size: 1.3rem;
 }
 
 .contact-info-container {
   display: flex;
   flex-direction: column;
+  gap: 24px;
+}
+
+.my-contact-img {
+  background-image: url(./images/contact-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-logos {
+  display: flex;
   gap: 24px;
 }
