@@ -70,16 +70,21 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 16px;
+  gap: 8px;
 }
 
 .project {
   margin-top: 32px;
+  max-width: 400px;
 }
 
 .project-items {
-  max-width: min-content;
+  max-width: clamp(250px, 100%, 400px);
   box-shadow: 0px 2px 6px #a3a3a3;
+}
+
+.project-items img {
+  max-width: 100%;
 }
 
 .project-info {
@@ -143,9 +148,21 @@ footer {
   gap: 24px;
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 600px) {
+  .project {
+    flex-basis: 45%;
+  }
+}
+
+@media (min-width: 1000px) {
   .project {
     flex-basis: 30%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .project {
+    max-width: none;
     display: flex;
     justify-content: center;
   }
