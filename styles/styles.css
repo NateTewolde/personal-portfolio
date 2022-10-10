@@ -154,8 +154,26 @@ footer {
   gap: 24px;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
+  .projects-container-header {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 12px;
+  }
+
   .projects-container {
+    justify-content: center;
+  }
+
+  .about-me-section {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .headshot {
+    float: none;
+    transform: none;
+    max-width: 300px;
   }
 }
 
